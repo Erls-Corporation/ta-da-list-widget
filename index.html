@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link rel="Stylesheet" href="style.css" type="text/css" media="screen" />
+		<script type="text/javaScript" src="scripts/Grid.js"></script>
+		<script type="text/javaScript" src="scripts/XHConn.js"></script>
+		<script type="text/javascript" src="scripts/prototype.js"></script>
+		<script type="text/javascript" src="scripts/moo.fx.js"></script>
+		<script type='text/javascript' src='scripts/AppleClasses/AppleScrollArea.js' />
+		<script type='text/javascript' src='scripts/AppleClasses/AppleScrollbar.js' />
+		<script type='text/javascript' src='scripts/AppleClasses/AppleInfoButton.js' charset='utf-8'/>
+		<script type='text/javascript' src='scripts/AppleClasses/AppleAnimator.js' charset='utf-8'/>
+		<script type='text/javascript' src='scripts/AppleClasses/AppleButton.js' charset='utf-8'/>
+		<script type="text/javaScript" src="scripts/tada.js"></script>
+	</head>
+	<body>
+		<div id="front">		
+			<h1 id="title"></h1>
+			<div id="container">
+				<div id="todos"></div>
+			</div>
+			<img src="images/spinner.gif" id="spinner" />
+			<div id="add_todo_container">
+				<a href="javascript:showAddTodo()" id="add_todo" title="Add another item">Add another item</a>				
+			</div>
+			<a href="javascript:createList()" id="create_list" title="Create a new list">Create a new list</a>			
+		  <select name="listSelect" id="listSelect" onchange="getListTodos(listSelect.options[listSelect.selectedIndex].value)"></select>
+			<div id="new_todo"></div>
+			<div id="scroller"></div>
+			<div id="infoButton"></div>
+			<a href="javascript:goToHome()" id="home" title="Your Ta-da Lists">Ta-da Lists</a>
+
+			<div id='bottom'>
+				<!-- the growbox image is provided as a widget resource.  The mousedown handler starts the resizing events. -->
+				<img id='growbox' src='/System/Library/WidgetResources/resize.png' onmousedown='mouseDown(event);'/>
+			</div>
+		</div>
+		
+		<div id="back">
+			<div id="borderless_u"><input id="username" type="text" /></div>
+			<div id="borderless_p"><input id="password" type="password" /></div>
+			<input type="checkbox" checked id="refresh">
+			<a href="javascript:hidePrefs();" id="done" title="Done">Done<a>
+			<a href="javascript:openLink('http://www.keeganjones.com/widgets/tada/')" id="tada" title="www.tadalist.com">Ta-da Lists<a>
+			<a href="javascript:openLink('http://www.37signals.com')" id="signals" title="www.37signals.com">37 Signals<a>
+			<a href="javascript:openLink('http://www.keeganjones.com')" id="keegan" title="www.keeganjones.com">Keegan<a>
+			<a href="javascript:openLink('http://www.justwatchthesky.com')" id="ryan" title="www.justwatchthesky.com">Ryan<a>
+			<a href="javascript:openLink('http://www.motherfuton.com')" id="noah" title="www.motherfuton.com">Noah<a>
+		</div>
+	</body>
+</html>

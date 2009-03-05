@@ -1,0 +1,305 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: "Lucida Grande", arial, sans-serif;
+}
+#front {
+	position: relative;
+	width: 438px;
+	height: 253px;
+	background: transparent url('images/front-top.png') left top no-repeat;
+}
+#front h1 {
+	width: 340px;
+	padding: 24px 0 0 75px;
+	letter-spacing: -1px;
+	font-size: 22px;
+  			font-weight: bold;
+  			text-overflow:ellipsis;
+   			overflow:hidden;
+   			white-space: nowrap;
+}
+#front h1 a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+#front h1 a:hover {
+	color: #3e3e3e;
+}
+#front #spinner {
+	position: absolute;
+	top: 119px;
+	left: 209px;
+}
+#front #infoButton {
+	z-index: 40;
+	position: absolute;
+	top: 14px;
+	right: 34px;
+}
+#front #listSelect {
+	z-index: 30;	
+	position: absolute;
+	width: 280px;
+	font-size: 18px;
+	left: 22px;
+	bottom: 29px;
+}
+#front #container {
+	position: absolute;
+	top: 72px;
+	left: 30px;
+	height: 90px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	left: 0;	
+	background: transparent url('images/front-middle.png') left top repeat-y;
+	padding: 0 30px 0 30px;	
+}
+#front #todos {
+	position: absolute;
+	font-size: 13px;
+	list-style-type: none;
+}
+#front #todos form {
+	width: 360px;
+	padding: 1px;
+}
+#front #scroller {
+	z-index: 20;	
+    position: absolute;
+    height: 105px;
+    top: 70px;
+    right: 24px;
+    width: 20px;
+	margin: 0;
+	padding: 0;
+  }
+
+#front #add_todo_container {
+	background: transparent url('images/front-middle.png') left top repeat-y;
+	margin: 0;
+	padding: 5px 30px 10px 30px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 58px;
+}
+
+#front #add_todo {
+	font-size: 11px;
+	color: #ff0000;
+}
+#front #add_todo:hover {
+	background: #ff0000;
+	color: white;
+	text-decoration: none;
+}
+#front #create_list {
+	z-index: 10;		
+	position: absolute;
+	bottom: 32px;
+	right: 30px;
+	font-size: 11px;
+	color: black;
+}
+#front #create_list:hover {
+	text-decoration: none;
+	background: black;
+	color: white;
+}
+#front #new_todo {
+	position: absolute;
+	width: 396px;
+	height: 129px;
+	top: 66px;
+	left: 20px;
+	background: white;
+	z-index: 100000;
+}
+#front #new_todo input {
+	position: absolute;
+	width: 338px;
+	top: 40px;
+	left: 30px;
+	margin-bottom: 4px;
+}
+#front #new_todo #add_this_item {
+	position: absolute;
+	top: 67px;
+	left: 30px;
+	margin-bottom: 5px;
+	display: inline-block;
+	text-indent: -3000px;
+	width: 106px;
+	height: 21px;
+	margin: 0 5px 0 0;
+	background: transparent url('images/add_this_item.gif') no-repeat;
+}
+#front #new_todo #close {
+	color: #ff0000;
+	font-size: 11px;
+	position: absolute;
+	left: 144px;
+	top: 70px;
+}
+#front #new_todo #close:hover {
+	text-decoration: none;
+	color: white;
+	background: #ff0000;
+}
+#front #home {
+	position: absolute;
+	top: 10px;
+	left: 23px;
+	display: block;
+	width: 44px;
+	height: 50px;
+	text-indent: -3000px;
+}
+#front span {
+	color: #333333;
+	font-size: 10px;
+}
+#front #elogin {
+	color: #205bab;
+}
+#front #elogin:hover {
+	color: white;
+	text-decoration: none;
+	background: #205bab;
+}
+#back {
+	position: relative;
+	width: 438px;
+	height: 253px;
+	background: transparent url('images/back.png') left top no-repeat;
+}
+#back #borderless_u, #back #borderless_p {
+	position: absolute;
+	top: 114px;
+	width:148px;
+	height:16px;
+	border-style: solid;
+	border-color: #white;
+	border-width: 1 1 1 1;
+	background-color:transparent;
+	overflow: hidden;
+}
+#back #borderless_u {
+	left: 54px;
+}
+#back #borderless_p {
+	left: 230px;
+}
+#back #borderless_u input, #back #borderless_p input {
+	position: absolute;
+	font-size: 12px;
+	top: -2px;
+	left: -2px;
+	color: black;
+	width: 152px;
+	height: 20px;
+	padding:2px;
+	background-color: white;
+	overflow:hidden;
+}
+#back #done {
+	position: absolute;
+	left: 327px;
+	top: 142px;
+	display: block;
+	height: 23px;
+	width: 60px;
+	text-indent: -3000px;
+}
+#back #signals {
+	position: absolute;
+	left: 141px;
+	bottom: 26px;
+	display: block;
+	height: 23px;
+	width: 48px;
+	text-indent: -3000px;
+}
+#back #keegan {
+	position: absolute;
+	left: 273px;
+	bottom: 26px;
+	display: block;
+	height: 23px;
+	width: 37px;
+	text-indent: -3000px;
+}
+#back #ryan {
+	position: absolute;
+	left: 311px;
+	bottom: 26px;
+	display: block;
+	height: 23px;
+	width: 29px;
+	text-indent: -3000px;
+}
+#back #noah {
+	position: absolute;
+	right: 47px;
+	bottom: 26px;
+	display: block;
+	height: 23px;
+	width: 29px;
+	text-indent: -3000px;
+}
+#back #tada {
+	position: absolute;
+	left: 120px;
+	top: 18px;
+	display: block;
+	height: 65px;
+	width: 200px;
+	text-indent: -3000px;
+}
+#back #login {
+	position: absolute;
+	left: 46px;
+	top: 145px;
+	display: block;
+	height: 18px;
+	width: 33px;
+	text-indent: -3000px;
+}
+#back {
+	display: none;
+}
+#spinner {
+	display: none;
+}
+
+/* Resize stuff  */
+
+#bottom {
+	z-index: 0;	
+	position:absolute;
+	width: 100%;
+	bottom:0;
+	right:0px;
+	height:58px;
+	background: transparent url('images/front-bottom.png') left bottom no-repeat;	
+}
+
+#growbox {
+	position:absolute;
+	right:16px;
+	bottom:24px;
+/*	border: 1px solid green;	*/
+	-apple-dashboard-region: dashboard-region(control rectangle);
+}
+
+#refresh {
+	position: absolute;
+	top: 150px;
+	left: 51px;
+}
